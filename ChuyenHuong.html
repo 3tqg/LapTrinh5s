@@ -1,0 +1,297 @@
+<html>
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <style>
+      #wait-btn {
+          width: 120px;
+          height: 36px;
+          border-radius: 5px;
+          margin: 8px auto;
+          overflow: hidden;
+          background-color: cornflowerblue;
+      }
+
+      #link-btn div {
+          background-color: cornflowerblue;
+        color:#000;
+          cursor: pointer;
+          display: flex;
+          height: 36px;
+          transition: all 0.5s;
+          align-items: center;
+          padding: 0 8px;
+          border-radius: 5px;
+          overflow: hidden;
+          transition: all 0.2s linear 0s;
+      }
+
+      #link-btn div:hover {
+          background-color: rgb(49, 113, 231);
+        	color: #eee;
+      }
+
+      #sec-wait {
+          font-size: 28px;
+          margin: 8px auto;
+          align-items: center;
+          display: flex;
+          justify-content: center;
+      }
+
+      #step {
+          text-align: right;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="page-0">
+      <div id="nof"></div>
+    </div>
+    <div id="page-1">
+      <div id="step"></div>
+
+      <div class="ads">
+        <!-- Ads Thích ứng -->
+        <ins
+          class="adsbygoogle"
+          data-ad-client="ca-pub-4942705839873585"
+          data-ad-format="auto"
+          data-ad-slot="3602204053"
+          data-full-width-responsive="true"
+          style="display: block;"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div id="sec-wait"></div>
+
+      <div class="ads">
+        <!-- Ads Thích ứng -->
+        <ins
+          class="adsbygoogle"
+          data-ad-client="ca-pub-4942705839873585"
+          data-ad-format="auto"
+          data-ad-slot="3602204053"
+          data-full-width-responsive="true"
+          style="display: block;"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+
+      <div id="wait-btn">
+        <div style="position: relative; background-color: transparent; width: 100%; height: 100%;">
+          <svg
+            style="background:transparent; position: absolute; top:-100%; right:-100%; bottom:-100%; left:-100%; margin:auto; min-height: 100%; max-height: 300%; min-width: 100%; max-width: 300%; "
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="xMidYMid"
+          >
+            <circle cx="84" cy="50" r="10" fill="#e15b64">
+              <animate
+                attributeName="r"
+                repeatCount="indefinite"
+                dur="0.7142857142857142s"
+                calcMode="spline"
+                keyTimes="0;1"
+                values="10;0"
+                keySplines="0 0.5 0.5 1"
+                begin="0s"
+              ></animate>
+              <animate
+                attributeName="fill"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="discrete"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="#e15b64;#abbd81;#f8b26a;#f47e60;#e15b64"
+                begin="0s"
+              ></animate>
+            </circle>
+            <circle cx="16" cy="50" r="10" fill="#e15b64">
+              <animate
+                attributeName="r"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="0;0;10;10;10"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="0s"
+              ></animate>
+              <animate
+                attributeName="cx"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="16;16;16;50;84"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="0s"
+              ></animate>
+            </circle>
+            <circle cx="50" cy="50" r="10" fill="#f47e60">
+              <animate
+                attributeName="r"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="0;0;10;10;10"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-0.7142857142857142s"
+              ></animate>
+              <animate
+                attributeName="cx"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="16;16;16;50;84"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-0.7142857142857142s"
+              ></animate>
+            </circle>
+            <circle cx="84" cy="50" r="10" fill="#f8b26a">
+              <animate
+                attributeName="r"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="0;0;10;10;10"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-1.4285714285714284s"
+              ></animate>
+              <animate
+                attributeName="cx"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="16;16;16;50;84"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-1.4285714285714284s"
+              ></animate>
+            </circle>
+            <circle cx="16" cy="50" r="10" fill="#abbd81">
+              <animate
+                attributeName="r"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="0;0;10;10;10"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-2.142857142857143s"
+              ></animate>
+              <animate
+                attributeName="cx"
+                repeatCount="indefinite"
+                dur="2.8571428571428568s"
+                calcMode="spline"
+                keyTimes="0;0.25;0.5;0.75;1"
+                values="16;16;16;50;84"
+                keySplines="0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1;0 0.5 0.5 1"
+                begin="-2.142857142857143s"
+              ></animate>
+            </circle>
+          </svg>
+        </div>
+      </div>
+
+      <div id="link-btn"></div>
+
+      <div class="ads">
+        <!-- Ads Thích ứng -->
+        <ins
+          class="adsbygoogle"
+          data-ad-client="ca-pub-4942705839873585"
+          data-ad-format="auto"
+          data-ad-slot="3602204053"
+          data-full-width-responsive="true"
+          style="display: block;"
+        ></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      </div>
+    </div>
+
+    <script>
+      var getUrlParameter = function getUrlParameter(sParam) {
+          var sPageURL = window.location.search.substring(1),
+              sURLVariables = sPageURL.split('&'),
+              sParameterName,
+              i;
+
+          for (i = 0; i < sURLVariables.length; i++) {
+
+              var arr = sURLVariables[i].split('='),
+                  sParameterName = arr.splice(0, 1);
+              sParameterName.push(arr.join('='));
+
+              if (sParameterName[0] === sParam) {
+                  return typeof sParameterName[1] === undefined ? flase : decodeURIComponent(sParameterName[1]);
+              }
+          }
+          return false;
+      };
+      function sleep(ms) {
+          return new Promise(resolve => setTimeout(resolve, ms));
+      }
+      function displayLink(link) {
+          var l = `<div>Nhấn vào đây để tiếp tục</div>`;
+          $("#link-btn").attr("style", `margin: 8px auto; display: flex; justify-content: center; align-items: center;`);
+          $("#link-btn").html(l);
+          $("#wait-btn").remove()
+          $("#link-btn div").on("click", function () {
+              window.open(link, "_parent");
+          })
+          console.log(2)
+      }
+      function displayStep(step) {
+          var st = (step == 0 ? `` : `<span>Bạn còn ${step + 1} bước nữa thôi :3</span>`);
+          $("#step").html(st)
+      }
+
+      var nextUrl = getUrlParameter("next");
+      try {
+          var url = atob(nextUrl).split("|"),
+              step = url.length - 1,
+              page = nextUrl.length == 0 ? 0 : 1;
+      } catch (er) {
+          var page = 0;
+      }
+
+      if (page == 1) {
+          if (step == 0) var link = url;
+          else {
+              var link = url;
+              link.splice(url.length - 1, 1);
+              link = link.join("|");
+              link = btoa(link);
+              link = location.protocol + '//' + location.host + location.pathname + '?next=' + encodeURIComponent(link)
+          }
+
+          displayStep(step);
+          (async function () {
+              for (var s = 5; s >= 0; s--) {
+                  $("#sec-wait").html(s);
+                  await sleep(1000);
+              }
+              displayLink(link);
+          }).call();
+      }
+      if (page == 0) {
+          $("#nof").html("<h2>Có vẻ như liên kết của này đã bị hỏng!</h2>")
+          $("#page-1").html("");
+      }
+    </script>
+  </body>
+</html>
