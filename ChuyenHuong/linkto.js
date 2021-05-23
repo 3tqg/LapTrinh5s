@@ -31,7 +31,7 @@
           console.log(2)
       }
       function displayStep(step) {
-          var st = (step == 0 ? `` : `<span>Bạn còn ${step + 1} bước nữa thôi :3</span>`);
+          var st = (step == 0 ? `Kéo xuống dưới và đợi một xíu nhé` : `<span>Bạn còn ${step + 1} bước nữa thôi :3</span>`);
           $("#step").html(st)
       }
 
@@ -56,7 +56,7 @@
 
           displayStep(step);
           (async function () {
-              for (var s = 5; s >= 0; s--) {
+              for (var s = 9; s >= 0; s--) {
                   $("#sec-wait").html(s);
                   await sleep(1000);
               }
