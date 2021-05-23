@@ -31,7 +31,7 @@
           console.log(2)
       }
       function displayStep(step) {
-          var st = (step == 0 ? `Kéo xuống dưới và đợi một xíu nhé` : `<span>Bạn còn ${step + 1} bước nữa thôi :3</span>`);
+          var st = (step == 0 ? `<span>Bạn còn bước này nữa thôi :3</span>` : `<span>Bạn còn ${step + 1} bước nữa thôi :3</span>`);
           $("#step").html(st)
       }
 
