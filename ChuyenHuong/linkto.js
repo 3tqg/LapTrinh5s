@@ -22,7 +22,6 @@
       }
       function displayLink(link) {
           var l = `<div>Nhấn vào đây để tiếp tục</div>`;
-          $("#link-btn").attr("style", `margin: 8px auto; display: flex; justify-content: center; align-items: center;`);
           $("#link-btn").html(l);
           $("#wait-btn").remove()
           $("#link-btn div").on("click", function () {
